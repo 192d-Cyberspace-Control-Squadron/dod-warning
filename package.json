@@ -1,6 +1,6 @@
 {
-  "name": "dod-warning",
-  "version": "0.1.0",
+  "name": "@192-cf/dod-warning",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
