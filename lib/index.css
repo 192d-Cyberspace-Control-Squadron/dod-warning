@@ -1,0 +1,84 @@
+.dodwarn-background {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    /* Greyed-out background */
+    z-index: 50;
+}
+
+.dodwarn-container {
+    position: fixed;
+    background-color: #ebebeb;
+    display: flex;
+    z-index: 9999;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    color: black;
+    width: 900px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: auto
+}
+
+.dodwarn-content {
+    padding: 1em 1em 1em 1em;
+}
+
+.dodwarn-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.dodwarn-h1 {
+    padding: 6px 6px 0 6px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.dodwarn-body {
+    padding-top: 5px;
+    width: auto;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.dodwarn-body ul {
+    list-style-type: square;
+}
+
+.dodwarn-body li {
+    padding: 7px;
+}
+
+.btn {
+    width: 230px;
+    height: 45px;
+    font-family: arial, helvetica, courier;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dodwarn-buttonbox {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.no-interaction {
+    pointer-events: none;
+    user-select: none;
+}
