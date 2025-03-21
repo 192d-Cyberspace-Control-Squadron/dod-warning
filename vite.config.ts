@@ -25,9 +25,9 @@ export default defineConfig({
     emptyOutDir: true,
   },
   plugins: [
-    react(), 
+    react(),
     dts(
-      { 
+      {
         rollupTypes: true,
         insertTypesEntry: true
       }
