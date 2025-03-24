@@ -1,9 +1,19 @@
 name: Run Tests
 
+permissions:
+  contents: read
+  pull-requests: write
+
 on:
+  
   pull_request:
     branches:
       - dev
+  push:
+    branches:
+      - dev
+  workflow_call:
+  workflow_dispatch:
 
 jobs:
   test:
@@ -23,3 +33,8 @@ jobs:
 
       - name: Run Jest tests
         run: npm test
+      
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_ACCESS_TOKEN }}
